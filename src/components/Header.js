@@ -7,8 +7,15 @@ const Header = () => {
   
   return ( 
     <header className={classes.header}> 
+  
+    <h1>Weather App</h1>
+   
+   
+
+    <section className={classes.search}> 
     <Searchbox/>
     <SearchButton/>
+    </section>
     </header>
 
    );

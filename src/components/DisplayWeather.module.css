@@ -1,0 +1,11 @@
+.weather {
+    height: 100%;
+    background-color: rgb(225, 156, 65);
+    width: 100%;
+    height: 40rem;
+    display: flex;
+}
+
+.weather h1 {
+    text-align: center;
+}

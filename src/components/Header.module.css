@@ -2,7 +2,24 @@
     height: 5rem;
     background-color: antiquewhite;
     width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+}
+
+.header h1 {
+    grid-column: 1;
+    font-family: arial, sans-serif;
+    font-weight: bold;
+    margin-bottom: 1px;
+    padding: 5px;
+    -webkit-text-stroke: 1px rgba(20, 12, 20, 0.073);
+    text-shadow: 0 0 7px grey;
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+    font-style: italic;
+}
+
+.search {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    grid-column: 2;
+    justify-items: start;
 }

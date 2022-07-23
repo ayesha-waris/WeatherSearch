@@ -1,6 +1,7 @@
 
 import { Fragment } from 'react';
 import './App.css';
+import DisplayWeather from './components/DisplayWeather';
 
 import Header from './components/Header';
 
@@ -11,7 +12,7 @@ function App() {
   return (
 <Fragment >
   <Header/>
- 
+ <DisplayWeather/>
 </Fragment>
   );
 }
