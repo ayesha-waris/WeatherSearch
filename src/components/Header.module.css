@@ -1,0 +1,8 @@
+.header {
+    height: 5rem;
+    background-color: antiquewhite;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
