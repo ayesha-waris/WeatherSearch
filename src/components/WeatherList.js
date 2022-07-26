@@ -2,7 +2,7 @@
 import WeatherItem from './WeatherItem';
 import classes from './WeatherList.module.css';
 const WeatherList = (list) => {
-  console.log(list);
+  //console.log(list);
   return ( 
    <div className={classes.wrapper}> 
    {

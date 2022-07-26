@@ -6,7 +6,7 @@ import SpeedIcon from '@mui/icons-material/Speed';
 const WeatherItem = (item) => {
 
   const time =  new Date(item.item.dt * 1000).toISOString().slice(11, 19);
-    // console.log(time);
+    
   return ( 
     
     <Wrapper className={classes.wrapper}> 

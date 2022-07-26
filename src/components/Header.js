@@ -1,13 +1,16 @@
 
 import classes from './Header.module.css';
+import React from 'react';
 import Searchbox from "./SearchBox";
 import { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { searchActions } from '../store/searchSlice';
 
+
 const Header = (props) => {
+
   const dispatch = useDispatch();
-  
+  const currentState = useSelector((state) => state.weather.currentState);
 
   const requestSearch = async (state) =>{
     try {
@@ -24,6 +27,7 @@ const Header = (props) => {
         city: city,
         list: list,
       }))
+
     
 
      // console.log(data);
@@ -49,8 +53,16 @@ const Header = (props) => {
 
  
   const onSearchHanlder = (state) => {
-
+    if(currentState.city.length !== 0)
+    {
+      dispatch(searchActions.setPreviousState({
+        city: currentState.city,
+        list: currentState.list,
+      }))
+    }
     requestSearch(state);
+  
+    
 
   }
 

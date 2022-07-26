@@ -1,3 +1,6 @@
 .App {
     background: url('./assets/w.jpg') center fixed;
+    background-position: bottom;
+    height: 60rem;
+    margin: 0, 0, 0, 0;
 }

@@ -10,7 +10,7 @@ import WeatherList from './WeatherList';
 const DisplayWeather = (props) => {
 
   const currentState = useSelector((state) => state.weather.currentState);
-  console.log(currentState);
+  //console.log(currentState);
 
 
   if(currentState.city.length === 0)

@@ -24,8 +24,11 @@ const searchSlice = createSlice({
   
 
    },
-    setPreviousState(state) {
-      state.previousState = state.currentState
+    setPreviousState(state, action) {
+      const newState = action.payload;
+      state.previousState.city = newState.city;
+     state.previousState.list = newState.list;
+      console.log(state.previousState.city);
 
     },
   },
