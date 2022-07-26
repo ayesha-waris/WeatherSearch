@@ -22,9 +22,9 @@ const Header = (props) => {
   
       const data = await response.json();
 
-      const {city, list } = {...data};
+      const {city :{name} , list} = {...data};
       dispatch(searchActions.setCurrentState({
-        city: city,
+        city: name,
         list: list,
       }))
 

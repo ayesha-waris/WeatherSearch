@@ -19,7 +19,7 @@ const PreviousSearch = () => {
       <Wrapper className={classes.wrapper}> 
       <h1>Previously Searched State</h1>
 
-        <h1  className={classes.city} >{previousState.city.name}</h1>
+        <h1  className={classes.city} >{previousState.city}</h1>
        
        
         </Wrapper>
