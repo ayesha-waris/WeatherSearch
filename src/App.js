@@ -23,9 +23,9 @@ const noError = () => {
 return (
 <div className='App'>
   <Header ifError = {ifError} noError={noError}/>
-  {!error? <DisplayWeather /> : <NotFoundstate/>}
+  {!error? <DisplayWeather /> : <NotFoundstate message={'State not found!'}/>}
  
- <WeatherList/>
+ 
 </div>
   );
 }

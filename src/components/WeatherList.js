@@ -1,27 +1,16 @@
 
 import WeatherItem from './WeatherItem';
 import classes from './WeatherList.module.css';
-const WeatherList = () => {
+const WeatherList = (list) => {
+  console.log(list);
   return ( 
    <div className={classes.wrapper}> 
-    <WeatherItem />
-    <WeatherItem />
-    <WeatherItem />
-    <WeatherItem />
-    <WeatherItem />
-    <WeatherItem />
-    <WeatherItem />
-    <WeatherItem />
-    <WeatherItem />
-    <WeatherItem />
-    <WeatherItem />
-    <WeatherItem />
-    <WeatherItem />
-    <WeatherItem />
-    <WeatherItem />
-    <WeatherItem />
-    <WeatherItem />
-    <WeatherItem />
+   {
+   list.list.map((item, num) => (
+    <WeatherItem  key={num} item={item}/>
+   ))
+}
+
     </div>
    );
 }

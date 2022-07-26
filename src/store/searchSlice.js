@@ -21,8 +21,7 @@ const searchSlice = createSlice({
      const newState = action.payload;
      state.currentState.city = newState.city;
      state.currentState.list = newState.list;
-     console.log(state.currentState.city);
-     console.log(state.currentState.list);
+  
 
    },
     setPreviousState(state) {
