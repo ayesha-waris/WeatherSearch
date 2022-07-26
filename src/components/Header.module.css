@@ -1,6 +1,5 @@
 .header {
     height: 5rem;
-    background-color: rgb(1, 118, 173);
     width: 100%;
     display: grid;
     grid-template-columns: 2fr 3fr;

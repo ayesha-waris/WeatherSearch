@@ -1,13 +1,27 @@
-import DisplayWeather from './DisplayWeather';
+
+import WeatherItem from './WeatherItem';
 import classes from './WeatherList.module.css';
 const WeatherList = () => {
   return ( 
    <div className={classes.wrapper}> 
-    <DisplayWeather/>
-    <DisplayWeather/>
-    <DisplayWeather/>
-    <DisplayWeather/>
-    <DisplayWeather/>
+    <WeatherItem />
+    <WeatherItem />
+    <WeatherItem />
+    <WeatherItem />
+    <WeatherItem />
+    <WeatherItem />
+    <WeatherItem />
+    <WeatherItem />
+    <WeatherItem />
+    <WeatherItem />
+    <WeatherItem />
+    <WeatherItem />
+    <WeatherItem />
+    <WeatherItem />
+    <WeatherItem />
+    <WeatherItem />
+    <WeatherItem />
+    <WeatherItem />
     </div>
    );
 }

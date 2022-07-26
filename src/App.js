@@ -11,11 +11,11 @@ import WeatherList from './components/WeatherList';
 
 function App() {
   return (
-<Fragment >
+<div className='App'>
   <Header/>
  <DisplayWeather/>
  <WeatherList/>
-</Fragment>
+</div>
   );
 }
 
