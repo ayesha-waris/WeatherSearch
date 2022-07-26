@@ -3,8 +3,14 @@ import { createSlice } from '@reduxjs/toolkit';
 
 
 const initialStates= {
-  currentState: {},
-  previousState: {}
+  currentState: {
+    city:'',
+    list: []
+  },
+  previousState: {
+    city:'',
+    list: []
+  }
 
 };
 const searchSlice = createSlice({
@@ -12,7 +18,11 @@ const searchSlice = createSlice({
   initialState: initialStates,
   reducers: {
    setCurrentState(state, action){
-     state.currentState =action.payload.currentState
+     const newState = action.payload;
+     state.currentState.city = newState.city;
+     state.currentState.list = newState.list;
+     console.log(state.currentState.city);
+     console.log(state.currentState.list);
 
    },
     setPreviousState(state) {
