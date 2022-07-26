@@ -1,11 +1,42 @@
-.weather {
-    height: 100%;
-    background-color: rgb(225, 156, 65);
-    width: 100%;
-    height: 40rem;
-    display: flex;
+.wrapper {
+    background-color: rgb(1, 118, 173);
+    width: 15rem;
+    border-radius: 35px;
+    color: white;
+    margin-left: 42%;
+    height: 10rem;
+    text-align: center;
+    align-content: center;
+    padding: 5px;
+    margin-top: 1rem;
 }
 
-.weather h1 {
+.city {
+    /* grid-column: 1/2;
+    font-size: xx-large; */
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.temp {
+    /* grid-column: 2/3;
     text-align: center;
+    font-size: xx-large; */
+    margin: 0;
+    font-size: 4rem;
+}
+
+
+/* .pressure {
+    grid-row-start: 3;
+    grid-column-start: 1;
+    grid-area: pressure;
+} */
+
+.humidity {
+    /* grid-row-start: 3;
+    grid-column-start: 2; */
+    display: flex;
+    justify-content: space-around;
+    padding: 2px;
 }

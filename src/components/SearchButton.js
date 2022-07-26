@@ -1,10 +1,12 @@
 
 import classes from './SearchButton.module.css';
 import Search from '@mui/icons-material/Search';
-const SearchButton = () => {
+const SearchButton = (props) => {
+
+
   return (  
-    <button  className={classes.button}>
-      <Search/>
+    <button onClick = {props.onClickHandler}  className={classes.button}>
+      <Search  />
     </button>
   );
 }

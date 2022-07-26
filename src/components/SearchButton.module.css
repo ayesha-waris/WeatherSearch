@@ -1,11 +1,11 @@
 .button {
-    margin: 1rem;
-    align-content: center;
     background-color: white;
     border: 0;
-    height: 45%;
-    border-radius: 120px;
-    padding: 5px;
+    border-radius: 300px;
+    padding: 3px;
+    margin-block: 10px;
+    margin-block-start: 1px;
+    top: 0;
 }
 
 button:hover {

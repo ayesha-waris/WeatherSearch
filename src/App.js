@@ -4,8 +4,9 @@ import './App.css';
 import DisplayWeather from './components/DisplayWeather';
 
 import Header from './components/Header';
+import WeatherList from './components/WeatherList';
 
-const API_KEY = '6d479952e2875a0d560200a7a1cbe4fa';
+
 // api.openweathermap.org/data/2.5/forecast?q=newyork&appid=6d479952e2875a0d560200a7a1cbe4fa
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
 <Fragment >
   <Header/>
  <DisplayWeather/>
+ <WeatherList/>
 </Fragment>
   );
 }

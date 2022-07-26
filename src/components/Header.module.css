@@ -1,6 +1,6 @@
 .header {
     height: 5rem;
-    background-color: antiquewhite;
+    background-color: rgb(1, 118, 173);
     width: 100%;
     display: grid;
     grid-template-columns: 2fr 3fr;
@@ -12,6 +12,7 @@
     font-weight: bold;
     margin-bottom: 1px;
     padding: 5px;
+    color: white;
     -webkit-text-stroke: 1px rgba(20, 12, 20, 0.073);
     text-shadow: 0 0 7px grey;
     text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
